@@ -42,7 +42,11 @@ namespace Classstudy
         {
             if (collision.collider.CompareTag("Player"))
             {
-                collision.gameObject.SetActive(false);
+                Player m_player = collision.gameObject.GetComponent<Player>();
+                m_player.currentHealth -= 1;
+      
+                if(m_player.currentHealth <= 0)
+                    collision.gameObject.SetActive(false);
             }
 
             if(collision.collider.CompareTag("NonDisable"))

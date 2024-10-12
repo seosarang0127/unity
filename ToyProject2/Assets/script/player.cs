@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Classstudy
 {
-    public class player : MonoBehaviour
+    public class Player : MonoBehaviour
     {
         #region 총 설명
 
@@ -33,6 +33,8 @@ namespace Classstudy
         #endregion
 
 
+        public int maxHealth;
+        public int currentHealth;
         // #region에는 무조건 #endregion 가 함께 붙는다. = 정리용
 
         public int speed = 10;
@@ -40,7 +42,7 @@ namespace Classstudy
         public bool isgrounded;
 
         void Update()
-        {
+        { 
             // 플레이어의 입력을 구현해보자.
             // 키보드 입력 : 
 
