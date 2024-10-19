@@ -7,6 +7,7 @@ TagManager:
   - NonDisable
   - Undefined
   - tag
+  - DestoryZone
   layers:
   - Default
   - TransparentFX
@@ -16,10 +17,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Bullet
+  - Enemy
+  - DestoryZone
   - 
   - 
   - 
