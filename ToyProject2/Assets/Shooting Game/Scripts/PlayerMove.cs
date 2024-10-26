@@ -14,6 +14,16 @@ namespace Classstudy
         [Header("속성")]
         public float speed = 5; // 이동 속력
 
+        [Header("속성")]
+        public float maxHealth = 3;
+        public float currentHealth;
+
+
+        private void Awake()
+        {
+            currentHealth = maxHealth;
+        }
+
         // Start is called before the first frame update
         // Update is called once per frame
         void Update()
@@ -23,7 +33,10 @@ namespace Classstudy
             Vector3 dif = new Vector3(horizontal, vertical, 0);
             dif.Normalize();
 
+            // 플레이어의 현재 위치가 x 7.5  y 4
+       
             transform.position = transform.position + dif * speed * Time.deltaTime;
+
         }
     }
 }

@@ -8,6 +8,7 @@ TagManager:
   - Undefined
   - tag
   - DestoryZone
+  - Bullet
   layers:
   - Default
   - TransparentFX
