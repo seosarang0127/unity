@@ -37,6 +37,15 @@ namespace Classstudy
        
             transform.position = transform.position + dif * speed * Time.deltaTime;
 
+            // 이동할 위치를 제한시킨다.
+
+            Vector3 positins = transform.position;
+
+            positins.x = Mathf.Clamp(positins.x, Boundary.minX, Boundary.maxX); 
+            positins.y = Mathf.Clamp(positins.y, Boundary.minY, Boundary.maxY);
+
+            transform.position = positins;
+
         }
     }
 }
